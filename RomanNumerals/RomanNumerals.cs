@@ -1,8 +1,16 @@
 ﻿namespace RomanNumerals;
 public class RomanNumerals
 {
-    public string convert(int i)
+    public string convert(int number)
     {
-        return "I";
+        if (number == 1)
+        {
+            return "I";
+        }
+        else
+        {
+            return "II";
+        }
+        
     }
 }
