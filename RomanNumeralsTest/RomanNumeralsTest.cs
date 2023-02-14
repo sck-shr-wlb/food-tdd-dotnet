@@ -8,10 +8,10 @@ public class RomanNumeralsTest
     {
         var expectedValue = "I";
         var romanNumerals = new RomanNumerals.RomanNumerals();
-        
+
         var output = romanNumerals.convert(1);
-        
-        Assert.Equal(expectedValue,output);
+
+        Assert.Equal(expectedValue, output);
     }
 
     [Fact]
@@ -25,8 +25,7 @@ public class RomanNumeralsTest
         Assert.Equal(expectedValue, output);
     }
 
-
-     [Fact]
+    [Fact]
     public void RomanNumeralsInput3ThenResultShouldBeIII()
     {
         var expectedValue = "III";
@@ -36,5 +35,4 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
-
 }

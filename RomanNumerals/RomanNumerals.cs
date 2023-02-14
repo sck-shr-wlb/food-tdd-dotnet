@@ -3,17 +3,12 @@ public class RomanNumerals
 {
     public string convert(int number)
     {
-        if (number == 1)
+        string result = "";
+        while (number != 0)
         {
-            return "I";
+            result += "I";
+            number -= 1;
         }
-        else if (number == 2)
-        {
-            return "II";
-        }
-        else
-        {
-            return "III";
-        }
+        return result;
     }
 }
