@@ -35,4 +35,15 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
+
+    [Fact]
+    public void RomanNumeralsInput4ThenResultShouldBeIV()
+    {
+        var expectedValue = "IV";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(4);
+
+        Assert.Equal(expectedValue, output);
+    }
 }
