@@ -46,4 +46,15 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
+
+    [Fact]
+    public void RomanNumeralsInput5ThenResultShouldBeV()
+    {
+        var expectedValue = "V";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(5);
+
+        Assert.Equal(expectedValue, output);
+    }
 }
