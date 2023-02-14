@@ -24,4 +24,17 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
+
+
+     [Fact]
+    public void RomanNumeralsInput3ThenResultShouldBeIII()
+    {
+        var expectedValue = "III";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(3);
+
+        Assert.Equal(expectedValue, output);
+    }
+
 }
