@@ -6,11 +6,13 @@ public class RomanNumerals
         string result = "";
         if (number == 4)
         {
-            return "IV";
+            result += "IV";
+            number -= 4;
         }
         if (number == 5)
         {
-            return "V";
+            result += "V";
+            number -= 5;
         }
         while (number != 0)
         {
