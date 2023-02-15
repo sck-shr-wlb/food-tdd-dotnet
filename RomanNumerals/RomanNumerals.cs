@@ -14,6 +14,11 @@ public class RomanNumerals
             result += "V";
             number -= 5;
         }
+        if (number == 6)
+        {
+            result += "VI";
+            number -= 6;
+        }
         while (number != 0)
         {
             result += "I";
