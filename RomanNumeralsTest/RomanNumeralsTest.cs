@@ -68,4 +68,15 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
+
+    [Fact]
+    public void RomanNumeralsInput7ThenResultShouldBeVII()
+    {
+        var expectedValue = "VII";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(7);
+
+        Assert.Equal(expectedValue, output);
+    }
 }
