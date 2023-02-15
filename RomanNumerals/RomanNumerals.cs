@@ -8,6 +8,10 @@ public class RomanNumerals
         {
             return "IV";
         }
+        if (number == 5)
+        {
+            return "V";
+        }
         while (number != 0)
         {
             result += "I";
