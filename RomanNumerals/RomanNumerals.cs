@@ -7,16 +7,7 @@ public class RomanNumerals
 
         while (number != 0)
         {
-            // if (number == 7)
-            // {
-            //     result += "VII";
-            //     number -= 7;
-            // }
-            // else if (number == 6)
-            // {
-            //     result += "VI";
-            //     number -= 6;
-            // }
+
              if (number >= 5)
             {
                 result += "V";
