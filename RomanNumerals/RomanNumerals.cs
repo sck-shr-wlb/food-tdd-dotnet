@@ -4,28 +4,16 @@ public class RomanNumerals
     public string convert(int number)
     {
         string result = "";
-
+        string[] romanCharacters = {"X","IX","V","IV","I"};
+        int[] numberals = {10,9,5,4,1};
         while (number != 0)
         {
-            if (number == 9)
-            {
-                result += "IX";
-                number -= 9;
-            }
-            else if (number >= 5)
-            {
-                result += "V";
-                number -= 5;
-            }
-            else if (number == 4)
-            {
-                result += "IV";
-                number -= 4;
-            }
-            else if (number >= 1)
-            {
-                result += "I";
-                number -= 1;
+            for(int i = 0;i<romanCharacters.Count();i++){
+                if(numberals[i]<=number)
+                {
+                    result += romanCharacters[i];
+                    number -= numberals[i];
+                }
             }
         }
         return result;

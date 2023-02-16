@@ -101,4 +101,15 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
+
+    [Fact]
+    public void RomanNumeralsInput10ThenResultShouldBeX()
+    {
+        var expectedValue = "X";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(10);
+
+        Assert.Equal(expectedValue, output);
+    }
 }
