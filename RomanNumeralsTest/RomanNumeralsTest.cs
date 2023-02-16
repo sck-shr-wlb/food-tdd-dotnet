@@ -79,4 +79,26 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
+    
+    [Fact]
+    public void RomanNumeralsInput8ThenResultShouldBeVIII()
+    {
+        var expectedValue = "VIII";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(8);
+
+        Assert.Equal(expectedValue, output);
+    }
+    
+    [Fact]
+    public void RomanNumeralsInput9ThenResultShouldBeIX()
+    {
+        var expectedValue = "IX";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(9);
+
+        Assert.Equal(expectedValue, output);
+    }
 }

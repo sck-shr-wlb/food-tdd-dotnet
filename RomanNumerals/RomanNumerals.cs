@@ -7,8 +7,12 @@ public class RomanNumerals
 
         while (number != 0)
         {
-
-             if (number >= 5)
+            if (number == 9)
+            {
+                result += "IX";
+                number -= 9;
+            }
+            else if (number >= 5)
             {
                 result += "V";
                 number -= 5;
@@ -23,7 +27,6 @@ public class RomanNumerals
                 result += "I";
                 number -= 1;
             }
-
         }
         return result;
     }
