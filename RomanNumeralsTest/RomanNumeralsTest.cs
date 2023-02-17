@@ -135,4 +135,16 @@ public class RomanNumeralsTest
         Assert.Equal(expectedValue, output);
     }
 
+    [Fact]
+    public void RomanNumeralsInput32ThenResultShouldBeXXXII()
+    {
+        var expectedValue = "XXXII";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(32);
+
+        Assert.Equal(expectedValue, output);
+    }
+    
+
 }
