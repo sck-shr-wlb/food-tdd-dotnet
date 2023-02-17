@@ -15,6 +15,10 @@ public class RomanNumerals
                     result += romanCharacters[i];
                     number -= numberals[i];
                 }
+                if (number / numberals[i] >= 1)
+                {
+                    i--;
+                }
             }
         }
         return result;
