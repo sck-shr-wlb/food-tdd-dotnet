@@ -145,6 +145,17 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
+
+       [Fact]
+    public void RomanNumeralsInput49ThenResultShouldBeXLIX()
+    {
+        var expectedValue = "XLIX";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(49);
+
+        Assert.Equal(expectedValue, output);
+    }
     
 
 }
