@@ -123,4 +123,16 @@ public class RomanNumeralsTest
 
         Assert.Equal(expectedValue, output);
     }
+
+        [Fact]
+    public void RomanNumeralsInput12ThenResultShouldBeXII()
+    {
+        var expectedValue = "XII";
+        var romanNumerals = new RomanNumerals.RomanNumerals();
+
+        var output = romanNumerals.convert(12);
+
+        Assert.Equal(expectedValue, output);
+    }
+
 }
